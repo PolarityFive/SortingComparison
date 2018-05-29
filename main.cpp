@@ -270,7 +270,7 @@ int main()
 			ar2.createArray();
 			break;
 		default:
-			cout << "Illegal option. Seriously, pick one of the options.It's not THAT hard. " << endl; //For the ones that want to break the program. 
+			cout << "Illegal option. " << endl; //For the ones that want to break the program. 
 		}
 		
 	} while (option != 0);
@@ -279,7 +279,6 @@ int main()
 	if (flag == true)
 	{
 		cout << "Results exported to Times.txt" << endl;
-		cout << "Program Terminated *Arnold Schwarzenegger's Accent*" << endl << endl; //Because Terminator 2 is the best Terminator movie. Also, Arnold = God.
 	}
 	else
 	{

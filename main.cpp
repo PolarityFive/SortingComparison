@@ -283,7 +283,7 @@ int main()
 	else
 	{
 		cout << "No operations were made." << endl;
-		cout << "Program Terminated *Arnold Schwarzenegger's Accent*" << endl;
+		cout << "Program Terminated." << endl;
 	}
 	system("PAUSE");
 	return (0);

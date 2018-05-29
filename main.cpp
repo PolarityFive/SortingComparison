@@ -19,20 +19,20 @@ int main()
 	cout << "-----------------" << endl;
 
 	Project ar1, ar2;
-	clock_t time;									//Time measurement variable. Different than sTime. 
+	clock_t time;					//Time measurement variable. Different than sTime. 
 	long mSize = 0;
 	int option;
-	float sTime;									//Makes (copy-pasting) easier in data display. Important for outData variable. 
-	bool flag = false;								//Bool flag for operation confirmation.
+	float sTime;					//Makes (copy-pasting) easier in data display. Important for outData variable. 
+	bool flag = false;				//Bool flag for operation confirmation.
 
 	cout << "Input Array size as integer: ";
 	cin >> mSize;
-	while (!cin)											//Because I don't want people intentionally fucking things up.
+	while (!cin)	
 	{
 		cout << "That was not an integer. Honestly, what the fuck?You can't be THAT useless. Try again" << endl;
 		cin.clear();
-		cin.ignore();									//There is an issue with the clear/ignore functions and if an integer is entered followed by a string, 
-		cin >> mSize;									// an infinite loop occurs. Will patch it in the future.
+		cin.ignore();					//There is an issue with the clear/ignore functions and if an integer is entered followed by a string, 
+		cin >> mSize;					// an infinite loop occurs. Will patch it in the future.
 	}							
 	ar1.setArraySize(mSize);
 	ar1.createArray();
@@ -53,10 +53,10 @@ int main()
 		cout << "#4: Sorted. (Descending)" << endl;
 		cout << "#5: Enter different Array Size." << endl << endl;
 		cin >> option;
-		switch (option)					// Code is a bit spaghetti. I might copy switch to a different file to make main clearer.
+		switch (option)		
 		{
 		case 0:
-			break;						//If this is removed, default case "Cout" appears if user enters 0. I don't like that. 
+			break;		//If this is removed, default case "Cout" appears if user enters 0. I don't like that. 
 		case 1:
 			ar1.fillArray(1);
 			ar1.copyArray(ar2);
@@ -255,13 +255,13 @@ int main()
 			cout << "Arrays have been reset. Please enter new Array size as an integer: ";
 			cin >> mSize;
 			cout << endl;
-			while (!cin)											//Because I don't want people intentionally breaking my fucking code. 
+			while (!cin)											
 			{
-				cout << "That was not an integer. Honestly, what the fuck? Try again" << endl;
+				cout << "That was not an integer. << endl;
 				cin.clear();
 				cin.ignore();									//There is an issue with the clear/ignore functions and if an integer is entered followed by a string, 
-				cin >> mSize;									//an infinite loop occurs. Will patch it in the future or pray to every god man has ever prayed the
-			}													//user doesn't enter something like that.  (Even copy-pasted the comment along with the code).
+				cin >> mSize;									//an infinite loop occurs. Will patch it in the future.
+			}													
 
 			ar1.setArraySize(mSize);
 			ar1.createArray();

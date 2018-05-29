@@ -11,7 +11,7 @@ int main()
 {
 	cout << "Student Information" << endl;
 	cout << "-------------------" << endl;
-	cout << "Name: Dimitris Asvestas" << endl << "AEM:  4262" << endl << endl;
+	cout << "Name: *Name removed because of public GitHub repository." << endl << endl;
 	cout << "Computer Hardware" << endl;
 	cout << "-----------------" << endl;
 	cout << "CPU: Intel Core i7 6700 clocked at 4.00GHz" << endl;

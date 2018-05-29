@@ -29,7 +29,7 @@ int main()
 	cin >> mSize;
 	while (!cin)	
 	{
-		cout << "That was not an integer. Honestly, what the fuck?You can't be THAT useless. Try again" << endl;
+		cout << "That was not an integer. " << endl;
 		cin.clear();
 		cin.ignore();					//There is an issue with the clear/ignore functions and if an integer is entered followed by a string, 
 		cin >> mSize;					// an infinite loop occurs. Will patch it in the future.

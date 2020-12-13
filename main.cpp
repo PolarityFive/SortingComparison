@@ -32,7 +32,7 @@ int main()
 		cout << "That was not an integer. " << endl;
 		cin.clear();
 		cin.ignore();					//There is an issue with the clear/ignore functions and if an integer is entered followed by a string, 
-		cin >> mSize;					// an infinite loop occurs. Will patch it in the future.
+		cin >> mSize;					// an infinite loop occurs. 
 	}							
 	ar1.setArraySize(mSize);
 	ar1.createArray();

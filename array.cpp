@@ -6,7 +6,7 @@
 #include <ctime>
 
 using namespace std;
-void QS(long pArray[], long left, long right);			//Non-member function call for Quicksorting the Private Array.
+void QS(long pArray[], long left, long right);			//Non-member function call to Quicksort the Private Array.
 
 void Project::setArraySize(long n1)
 {
